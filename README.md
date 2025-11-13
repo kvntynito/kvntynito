@@ -10,54 +10,40 @@ I’m currently developing a full Blue Team portfolio with real SecOps workflows
 ```mermaid
 flowchart LR
 
-    subgraph A[1. SecOps & Detection Engineering]
+    subgraph A[SecOps & Detection Engineering]
         A1[Sentinel Analytics Rules]
         A2[KQL Queries]
         A3[Incident Investigations]
     end
 
-    subgraph B[2. Vulnerability Management]
+    subgraph B[Vulnerability Management]
         B1[Nmap Scans]
         B2[OpenVAS Reports]
         B3[CVSS Scoring]
     end
 
-    subgraph C[3. Endpoint Hardening]
+    subgraph C[Endpoint Hardening]
         C1[Windows Baselines]
         C2[Linux Hardening]
         C3[Validation Evidence]
     end
 
-    subgraph D[4. Azure Cloud Security]
+    subgraph D[Azure Cloud Security]
         D1[Entra ID IAM]
         D2[Sentinel Integrations]
         D3[Defender for Cloud]
     end
 
-    subgraph E[5. GRC Policies & Risk]
+    subgraph E[GRC Policies & Risk]
         E1[Security Policies]
         E2[Risk Matrix]
         E3[Framework Mapping]
     end
 
-    subgraph F[6. Automation]
+    subgraph F[Automation & Scripting]
         F1[Python Parsers]
         F2[PowerShell Scripts]
-        F3[Bash Tools]
-    end
 
-    %% Connections
-    B --> C
-    C --> A
-    D --> A
-    A --> E
-    B --> E
-    C --> E
-    A --> F
-    B --> F
-    C --> F
-    D --> F
-    E --> F
     
 
 
