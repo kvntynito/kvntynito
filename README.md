@@ -8,58 +8,13 @@ I’m currently developing a full Blue Team portfolio with real SecOps workflows
 ## Featured Security Projects (6-Repo Portfolio)
 
 ```mermaid
-flowchart TB
-
-    subgraph SecOps["SecOps & Detections"]
-        A1["Analytics Rules"]
-        A2["KQL Queries"]
-        A3["Incident Investigations"]
-    end
-
-    subgraph Vuln["Vulnerability Management"]
-        B1["Nmap Scans"]
-        B2["OpenVAS Reports"]
-        B3["CVSS Scoring"]
-    end
-
-    subgraph Hardening["Endpoint Hardening"]
-        C1["Windows Baselines"]
-        C2["Linux Hardening"]
-        C3["Validation Evidence"]
-    end
-
-    subgraph Cloud["Azure Cloud Security"]
-        D1["IAM / RBAC"]
-        D2["Sentinel Integration"]
-        D3["Defender for Cloud"]
-    end
-
-    subgraph GRC["GRC Policies & Risk"]
-        E1["Security Policies"]
-        E2["Risk Matrix"]
-        E3["Framework Mapping"]
-    end
-
-    subgraph Auto["Automation & Scripting"]
-        F1["Python Tools"]
-        F2["PowerShell Scripts"]
-        F3["Bash Tools"]
-    end
-
-    %% Flow
-    Vuln --> Hardening
-    Hardening --> SecOps
-    Cloud --> SecOps
-
-    SecOps --> GRC
-    Vuln --> GRC
-    Hardening --> GRC
-
-    SecOps --> Auto
-    Vuln --> Auto
-    Hardening --> Auto
-    Cloud --> Auto
-    GRC --> Auto
+flowchart LR
+    A[SecOps] --> B[Vuln Mgmt]
+    B --> C[Hardening]
+    C --> D[Cloud Sec]
+    D --> E[GRC]
+    E --> F[Automation]
+    F --> A
 ```
 
 
