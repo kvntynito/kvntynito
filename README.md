@@ -5,74 +5,91 @@ I learn by building real labs and solving real problems — everything in my Git
 
 I’m currently developing a full Blue Team portfolio with real SecOps workflows across Microsoft Sentinel, Azure, Sysmon, OpenVAS, PowerShell, Python, Bash, and industry security frameworks.
 
-## 🔐 Featured Security Projects (6-Repo Portfolio)
+## Featured Security Projects (6-Repo Portfolio)
 
 ```mermaid
 flowchart LR
 
-    subgraph A[SecOps & Detection Engineering]
+    subgraph A[1. SecOps & Detection Engineering]
         A1[Sentinel Analytics Rules]
         A2[KQL Queries]
         A3[Incident Investigations]
     end
 
-    subgraph B[Vulnerability Management]
+    subgraph B[2. Vulnerability Management]
         B1[Nmap Scans]
         B2[OpenVAS Reports]
         B3[CVSS Scoring]
     end
 
-    subgraph C[Endpoint Hardening]
+    subgraph C[3. Endpoint Hardening]
         C1[Windows Baselines]
         C2[Linux Hardening]
         C3[Validation Evidence]
     end
 
-    subgraph D[Azure Cloud Security]
+    subgraph D[4. Azure Cloud Security]
         D1[Entra ID IAM]
         D2[Sentinel Integrations]
         D3[Defender for Cloud]
     end
 
-    subgraph E[GRC Policies & Risk]
+    subgraph E[5. GRC Policies & Risk]
         E1[Security Policies]
         E2[Risk Matrix]
         E3[Framework Mapping]
     end
 
-    subgraph F[Automation & Scripting]
+    subgraph F[6. Automation]
         F1[Python Parsers]
         F2[PowerShell Scripts]
+        F3[Bash Tools]
+    end
+
+    %% Connections
+    B --> C
+    C --> A
+    D --> A
+    A --> E
+    B --> E
+    C --> E
+    A --> F
+    B --> F
+    C --> F
+    D --> F
+    E --> F
+```
+
 
     
 
 
-**🛡️ 1. SecOps & Detection Engineering (Microsoft Sentinel)**
+**1. SecOps & Detection Engineering (Microsoft Sentinel)**
 
 Detection rules, KQL analytics, incidents, and log analysis in a full SIEM mini-lab.
 🔗 https://github.com/kvntynito/1-secops-detentions-sentinel
 
-**🔎 2. Vulnerability Management (Nmap / OpenVAS)**
+**2. Vulnerability Management (Nmap / OpenVAS)**
 
 Network scanning, vulnerability assessments, risk scoring, and remediation planning.
 🔗 https://github.com/kvntynito/2-vuln-mgmt-openvas-lab
 
-**💻 3. Endpoint Hardening (Windows & Linux)**
+**3. Endpoint Hardening (Windows & Linux)**
 
 Secure baselines, configuration changes, validation scripts, and evidence collection.
 🔗 https://github.com/kvntynito/3-endpoint-hardening-windows-linux
 
-**☁️ 4. Azure Cloud Security Mini-Lab**
+**4. Azure Cloud Security Mini-Lab**
 
 Sentinel, Defender for Cloud, IAM/RBAC reviews, Secure Score, and architecture mapping.
 🔗 https://github.com/kvntynito/4-azure-security-mini-lab
 
-**🏛️ 5. Governance, Risk & Compliance (GRC)**
+**5. Governance, Risk & Compliance (GRC)**
 
 Policies, risk matrices, framework mapping, and governance documentation.
 🔗 https://github.com/kvntynito/5-grc-policies-and-risk
 
-**⚙️ 6. Cybersecurity Automation (Python / PowerShell / Bash)**
+**6. Cybersecurity Automation (Python / PowerShell / Bash)**
 
 Log parsers, enrichment tools, Windows/Linux auditing, and automated detection scripts.
 🔗 https://github.com/kvntynito/6-sec-automation-py-ps-bash
