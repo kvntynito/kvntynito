@@ -17,10 +17,6 @@ flowchart LR
     F --> A
 ```
 
-
-    
-
-
 **1. SecOps & Detection Engineering (Microsoft Sentinel)**
 
 Detection rules, KQL analytics, incidents, and log analysis in a full SIEM mini-lab.
