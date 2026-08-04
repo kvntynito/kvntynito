@@ -1,4 +1,4 @@
-## Hi, I’m Kevin — IT Maintainer for networks and security.
+## Hi, I’m Kevin — IT Admaintainer for networks and security.
 
 I’m someone who learns by building and maintaining. I built a segmented homelab and a Windows telemetry pipeline, then used that data to practice incident investigations—writing case files with timelines, artifacts/IOCs, and repeatable searches/queries across Splunk, Elastic/Kibana, and Wazuh (See Portfolio 1). I’m strongest in alert triage, log analysis, and communicating technical findings clearly.
 
